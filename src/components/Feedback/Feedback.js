@@ -1,8 +1,15 @@
 import PropTypes from 'prop-types';
 
+import styles from './Feedback.module.scss';
+
 const FeedbackBtn = ({ feedback, onLeaveFeedback }) => {
   return (
-    <button type="button" data-feedback={feedback} onClick={onLeaveFeedback}>
+    <button
+      type="button"
+      data-feedback={feedback}
+      onClick={onLeaveFeedback}
+      className={styles.Button}
+    >
       {feedback}
     </button>
   );
